@@ -24,24 +24,75 @@
     </nav>
     <main class="mt-10"> 
       <section>
-
-      
-        <div class="tab-container w-full">
+        <!-- tab container part start from here -->
+       <div class="tab-container w-full">
                 <div class="tabs p-5 w-96 m-auto text-center flex justify-center">
                     <div id="tab-container" class="flex gap-7">
-
                     </div>
                 </div>
             </div>
       </section>
-      <section class="tab-container w-full" >
-        
+
+      <!-- card container part start from here -->
+      <section class="card-container" >
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4" id="card-container">
+
+        </div>
+      </section>
+
+      <section>
+        <!-- error option -->
+
+            <div id="error-container" class="text-center my-16 hidden">
+                <div class="flex justify-center">
+                    <img src="./Icon.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-4xl font-bold">Oops!! Sorry, There is no<br> content here</h1>
+                </div>
+            </div>
+      </section>
+      <!-- verified icon -->
+      <section>
+            <div id="verified-icon">
+                <img class="pr-8" src="./fi_10629607.png" alt="">
+            </div>
       </section>
 </div>
     </main>
     <script src="js/tube.js"></script>
   </body>
 </html>
+
+
+ <!-- <div class="card w-full bg-base-100 shadow-xl">
+                <figure><img class="w-full h-48"
+                    src=${id.thumbnail}
+                  />
+                  <div class="absolute bottom-[130px] right-1 bg-black text-white rounded">
+                        <p class="text-sm">${id?.others?.posted_date? time : ''}</p>
+                    </div>
+                  </figure>
+                <div class="card-body">
+                    <div class="flex gap-2">
+                        <div class="w-8 h-8">
+                            <img class="w-full h-full rounded-full" src=${id.authors[0].profile_picture} />
+                        </div>
+                        <div>
+                            <h1 class="text-base font-bold">${id.title}</h1>
+                            <div class="flex">
+                                <p class="text-sm font-normal">${id.authors[0].profile_name}</p>
+                                <div>
+                                    ${id?.authors[0]?.verified? verifiedIcon : ''}
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-sm font-normal">${id.others.views} VIEWS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
 
 
 
